@@ -18,13 +18,13 @@ const details = {
 function ServiceDetail() {
   const { service } = useParams()
   const item = details[service]
-  if (!item) return <main className="content-page"><h1>Service not found.</h1><Link to="/services">View all services ?</Link></main>
+  if (!item) return <main className="content-page"><h1>Service not found.</h1><Link to="/services">View all services</Link></main>
   return <main className="content-page">
     <div className="section-label">OUR SERVICES / {item.number}</div>
     <h1>{item.title}<br /><span>Made practical.</span></h1>
     <p className="page-lead">{item.lead}</p>
     <section className="detail-panel"><div className="section-label">WHAT WE CAN HELP WITH</div><p>{item.text}</p><ul>{item.items.map(x => <li key={x}>{x}</li>)}</ul></section>
-    <section className="page-cta"><h2>Let's talk about your idea.</h2><p>Every project is different. Tell us what you need and we'll discuss a suitable approach.</p><Link className="contact-link" to="/contact">REQUEST A QUOTE ?</Link></section>
+    <section className="page-cta"><h2>Let's talk about your idea.</h2><p>Every project is different. Tell us what you need and we'll discuss a suitable approach.</p><Link className="contact-link" to="/contact">REQUEST A QUOTE</Link></section>
   </main>
 }
 export default ServiceDetail

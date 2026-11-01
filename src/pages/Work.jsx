@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const projects = [
   {
@@ -35,7 +35,7 @@ function ProjectVisual({ type }) {
         <div className="restaurant-content">
           <small>GOOD FOOD. GOOD COMPANY.</small>
           <strong>A little<br />something<br />different.</strong>
-          <span>EXPLORE THE MENU ?</span>
+          <span>EXPLORE THE MENU</span>
         </div>
         <div className="restaurant-bottom">SEASONAL KITCHEN — EST. 2026</div>
       </div>
@@ -50,7 +50,7 @@ function ProjectVisual({ type }) {
           <small>BUILT AROUND YOUR AMBITION</small>
           <strong>Move your<br />business<br />forward.</strong>
           <p>Clear thinking. Better solutions.</p>
-          <span>LET'S TALK ?</span>
+          <span>LET'S TALK</span>
         </div>
         <div className="business-footer"><span>STRATEGY</span><span>GROWTH</span><span>RESULTS</span></div>
       </div>
@@ -106,7 +106,7 @@ function Work() {
       <section className="work-cta">
         <div className="section-label">HAVE A PROJECT IN MIND?</div>
         <h2>Your idea could<br /><span>be next.</span></h2>
-        <Link to="/contact" className="contact-link">LET'S TALK ?</Link>
+        <Link to="/contact" className="contact-link">LET'S TALK</Link>
       </section>
     </main>
   )

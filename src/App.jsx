@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Services from './pages/Services'
@@ -23,7 +23,7 @@ function Navbar() {
     <button className="menu-toggle" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? 'CLOSE ?' : 'MENU ?'}</button>
     <nav className={`navigation ${menuOpen ? 'navigation-open' : ''}`}>
       {links.map(([path, label]) => <NavLink key={path} to={path} onClick={closeMenu}>{label}</NavLink>)}
-      <Link className="nav-cta" to="/contact" onClick={closeMenu}>Get in touch ?</Link>
+      <Link className="nav-cta" to="/contact" onClick={closeMenu}>Get in touch</Link>
     </nav>
   </header>
 }
@@ -45,7 +45,7 @@ function App() {
     <Route path="/pricing" element={<Pricing />} />
     <Route path="/about" element={<About />} />
     <Route path="/contact" element={<Contact />} />
-    <Route path="*" element={<main className="content-page"><div className="section-label">404 / PAGE NOT FOUND</div><h1>Wrong turn.<br /><span>Easy fix.</span></h1><Link className="text-link" to="/">BACK TO HOME ?</Link></main>} />
+    <Route path="*" element={<main className="content-page"><div className="section-label">404 / PAGE NOT FOUND</div><h1>Wrong turn.<br /><span>Easy fix.</span></h1><Link className="text-link" to="/">BACK TO HOME</Link></main>} />
   </Routes><Footer /></>
 }
 export default App

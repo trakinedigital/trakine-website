@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const services = [
   {
@@ -34,7 +34,7 @@ function ServiceVisual({ type }) {
           <div className="preview-content">
             <small>DESIGNED TO MOVE YOU FORWARD</small>
             <strong>Make your<br />next move.</strong>
-            <div className="preview-button">EXPLORE MORE ?</div>
+            <div className="preview-button">EXPLORE MORE</div>
           </div>
           <div className="preview-footer">STRATEGY. DESIGN. DIGITAL.</div>
         </div>
@@ -78,7 +78,7 @@ function ServiceVisual({ type }) {
         <div className="workflow-line" />
         <div className="workflow-node"><span>?</span><div><strong>Update records</strong><small>Information saved</small></div></div>
       </div>
-      <div className="automation-bottom"><span>3 STEPS CONNECTED</span><span>RUNNING SMOOTHLY ?</span></div>
+      <div className="automation-bottom"><span>3 STEPS CONNECTED</span><span>RUNNING SMOOTHLY</span></div>
     </div>
   )
 }
@@ -91,7 +91,7 @@ function Home() {
         <h1>BIG DIGITAL.<br /><span>SMALL PRICES.</span></h1>
         <div className="hero-bottom">
           <p>Digital solutions built to move your ideas forward — without the oversized price tag.</p>
-          <Link to="/services" className="text-link">EXPLORE OUR SERVICES ?</Link>
+          <Link to="/services" className="text-link">EXPLORE OUR SERVICES</Link>
         </div>
         <div className="hero-index">01 — 03 / WHAT WE DO</div>
       </section>
@@ -119,7 +119,7 @@ function Home() {
               <div className="service-number">{service.number} / 03</div>
               <h3>{service.name}</h3>
               <p>{service.description}</p>
-              <Link to={service.link} className="text-link">DISCOVER MORE ?</Link>
+              <Link to={service.link} className="text-link">DISCOVER MORE</Link>
             </div>
           </article>
         ))}
@@ -138,7 +138,7 @@ function Home() {
       <section className="home-contact">
         <div className="section-label">HAVE SOMETHING IN MIND?</div>
         <h2>Let's make it <span>happen.</span></h2>
-        <Link to="/contact" className="contact-link">START A CONVERSATION ?</Link>
+        <Link to="/contact" className="contact-link">START A CONVERSATION</Link>
       </section>
     </main>
   )

@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const services = [
   { number: '01', title: 'Web Development', text: 'Modern, responsive websites designed to make your business look professional and help customers take action.', path: '/services/web-development', tags: 'BUSINESS WEBSITES · LANDING PAGES · RESPONSIVE DESIGN' },
@@ -15,10 +15,10 @@ function Services() {
       <div className="content-service-list">
         {services.map(s => <article className="content-service" key={s.number}>
           <span className="section-label">{s.number} / 03</span>
-          <div><h2>{s.title}</h2><p>{s.text}</p><small>{s.tags}</small><br /><Link className="text-link" to={s.path}>EXPLORE SERVICE ?</Link></div>
+          <div><h2>{s.title}</h2><p>{s.text}</p><small>{s.tags}</small><br /><Link className="text-link" to={s.path}>EXPLORE SERVICE</Link></div>
         </article>)}
       </div>
-      <section className="page-cta"><h2>Not sure what you need?</h2><p>Tell us what you're trying to achieve and we'll figure out the next step together.</p><Link className="contact-link" to="/contact">TALK TO US ?</Link></section>
+      <section className="page-cta"><h2>Not sure what you need?</h2><p>Tell us what you're trying to achieve and we'll figure out the next step together.</p><Link className="contact-link" to="/contact">TALK TO US</Link></section>
     </main>
   )
 }
