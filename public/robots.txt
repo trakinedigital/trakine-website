@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://trakine-digital.vercel.app/sitemap.xml
